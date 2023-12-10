@@ -17,9 +17,9 @@
     document.getElementById("btn").onclick = function(){
       let arr = document.getElementById("in").value.split(",");
       arr.forEach(e => {
-        let b = document.createElement("p")
-        b.innerHTML = `<p>${e}<span onclick="b">🔲</span></p>`;
-        document.getElementById("div").appendChild(b);
+        let c = document.createElement("p")
+        c.innerHTML = `<p>${e}<span onclick="b()">🔲</span></p>`;
+        document.getElementById("div").appendChild(c);
       })
       document.getElementById("in").style.display = "none";
       document.getElementById("btn").style.display = "none";
