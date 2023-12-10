@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="div"></div>
+    <input id="in">
+    <button id="btn">Send</button>
+  </body>
+  <script>
+    document.getElementById("btn").onclick = function(){
+      let arr = document.getElementById("in").value.split(",");
+      arr.forEach(e => {
+        let b = document.createElement("p")
+        b.innerHTML = `<p>${e}<span id="box">🔲</span></p>`;
+        document.getElementById("div").appendChild(b);
+      })
+      document.getElementById("in").style.display = "none";
+      document.getElementById("btn").style.display = "none";
+    }
+  </script>
+</html>
