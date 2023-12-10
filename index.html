@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      p {
+        font-family: Calibri;
+        font-size: 46px;
+      }
+    </style>
+  </head>
   <body>
     <div id="div"></div>
     <input id="in">
@@ -15,6 +23,10 @@
       })
       document.getElementById("in").style.display = "none";
       document.getElementById("btn").style.display = "none";
+    }
+    document.getElementById("box").onclick = function(e){
+      if (e.target.innerHTML == "🔲") e.target.innerHTML = "✅";
+      else e.target.innerHTML == "🔲";
     }
   </script>
 </html>
