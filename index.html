@@ -18,15 +18,16 @@
       let arr = document.getElementById("in").value.split(",");
       arr.forEach(e => {
         let b = document.createElement("p")
-        b.innerHTML = `<p>${e}<span id="box">🔲</span></p>`;
+        b.innerHTML = `<p>${e}<span onclick="b">🔲</span></p>`;
         document.getElementById("div").appendChild(b);
       })
       document.getElementById("in").style.display = "none";
       document.getElementById("btn").style.display = "none";
-      document.getElementById("box").onclick = function(e){
+    }
+
+    function b(e){
       if (e.target.innerHTML == "🔲") e.target.innerHTML = "✅";
       else e.target.innerHTML == "🔲";
-      }
     }
     
   </script>
